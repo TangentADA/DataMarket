@@ -124,6 +124,7 @@ yarn build
 
 ## To Do
 
+
 <ul>
   <li>[X] Add total market information</li>
   <li>[X] Search UI alignment & Functionality</li>
