@@ -125,11 +125,13 @@ yarn build
 ## To Do
 
 <ul>
+  <li>[X] Add total market information</li>
+  <li>[X] Search UI alignment & Functionality</li>
+  <li>[X] Move coin details to full page</li>
+  <li>[X] Refactor codebase and webpage structure</li>
+  <li>[X] Add Home / Dashboard / About pages</li>
   <li>[ ] login/signup authentication</li>
   <li>[ ] Watchlist</li>
   <li>[ ] Binding Server-Side</li>
-  <li>[ ] Add total market information</li>
-  <li>[ ] Search UI alignment & Functionality</li>
-  <li>[ ] Move coin details to full page</li>
 </ul>
 
