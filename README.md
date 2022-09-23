@@ -1,4 +1,4 @@
-# React Cryptocurrency App
+# Cryptocurrency App
 Consolidating RESTFUL calls from the CoinGecko API into a React application. I'll be using v3 of the API (the most recent version at the time of starting this project) This app will be using ant design for UI. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,42 +69,6 @@ Generated with `tree` command.
     └── index.js
 ```
 
-# Screenshots
-
-**home**
-![home](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.44%20pm.jpg)
-
-**about**
-![about](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.01.08%20pm.jpg)
-
-**status updates**
-![status updates](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%201.59.49%20pm.jpg)
-
-**coins listing**
-![coins listing](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%201.59.56%20pm.jpg)
-
-**coin details 1**
-![coin details](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%201.59.49%20pm.jpg)
-
-**coin details 2**
-![coin details 2](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.04%20pm.jpg)
-
-**coin details 3**
-![coin details 3](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.07%20pm.jpg)
-
-**event list**
-![event listing](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.16%20pm.jpg)
-
-**exchanges listing**
-![exchanges listing](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.31%20pm.jpg)
-
-**exchange rates**
-![exchange rates](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.36%20pm.jpg)
-
-**global**
-![global](https://github.com/danielc92/react-crypto-app/blob/master/screenshots/Screen%20Shot%202019-07-29%20at%202.00.40%20pm.jpg)
-
-
 # Themes
 The themes for this app will directly correlate to the api endpoints provided by the CoinGecko API. I want to split up the app into digestible React components in the following areas, which will most likely form part of a larger dashboard interface.
 
@@ -141,6 +105,9 @@ I aim to use the following packages:
 # Steps to reproduce
 
 ```sh
+
+git clone https://github.com/TangentADA/DataMarket.git
+
 # install dependencies and start local server (make sure you have nvm and yarn installed beforehand)
 nvm use
 yarn
@@ -149,3 +116,20 @@ yarn start
 # building
 yarn build
 ```
+
+## Preview
+
+<a href="https://data-market-pipeline.herokuapp.com/" >Heroku Deployment</a>
+
+
+## To Do
+
+<ul>
+  <li>[ ] login/signup authentication</li>
+  <li>[ ] Watchlist</li>
+  <li>[ ] Binding Server-Side</li>
+  <li>[ ] Add total market information</li>
+  <li>[ ] Search UI alignment & Functionality</li>
+  <li>[ ] Move coin details to full page</li>
+</ul>
+
