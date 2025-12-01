@@ -23,23 +23,22 @@ class ReactAbout extends Component {
             YallaCap is a fast, lightweight crypto intelligence terminal designed for
             traders, explorers, and curious minds wandering the world of magic
             internet money. It aggregates real-time market data, global metrics,
-            exchange info, trending coins, and more — all through a clean and
+            exchange info, trending coins and more — all through a clean and
             intuitive interface.
           </Paragraph>
 
           <Paragraph>
-            Whether you’re deep in the charts, researching the next narrative, or
-            just checking if the market is down bad (again), YallaCap gives you the
+            Whether you're deep in the charts, researching the next narrative or
+            just checking if the market is down bad again, YallaCap gives you the
             tools to see the crypto world clearly.
           </Paragraph>
 
-          {/* CoinGecko Section */}
           <Title level={3}>Powered by Live Crypto Data</Title>
 
           <Paragraph>
-            All market data is sourced from the CoinGecko API, one of the most
-            reliable, community-friendly and widely used data providers in the crypto
-            ecosystem.
+            All market data is sourced from the CoinGecko API — one of the most
+            reliable, community-friendly and widely used data providers in the
+            crypto ecosystem.
           </Paragraph>
 
           <a
@@ -56,23 +55,23 @@ class ReactAbout extends Component {
           </a>
 
           <Paragraph>
-            Prices, volumes, market caps, trending assets, and global metrics are
+            Prices, volumes, market caps, trending assets and global metrics are
             pulled directly from the public CoinGecko API.
           </Paragraph>
 
-          {/* Cardano Section */}
           <Title level={3}>Powered by Cardano</Title>
 
           <Paragraph>
-            YallaCap is built with a strong foundation in the Cardano ecosystem; 
-            one of the most secure, research-driven, and energy-efficient blockchain
-            platforms in the world. Cardano’s design philosophy of formal
-            verification, predictable scalability, and robust UTXO accounting
+            YallaCap is built with a strong foundation in the Cardano ecosystem —
+            one of the most secure, research-driven and energy-efficient blockchain
+            platforms in the world. Cardano's design philosophy of formal
+            verification, predictable scalability and robust UTXO accounting
             provides a powerful base for future on-chain integrations.
           </Paragraph>
 
           <Paragraph>
-            As YallaCap evolves, deeper Cardano support will be introduced, including:
+            As YallaCap evolves, deeper Cardano support will be introduced,
+            including:
           </Paragraph>
 
           <ul style={{ paddingLeft: '1.2rem' }}>
@@ -84,25 +83,23 @@ class ReactAbout extends Component {
           </ul>
 
           <Paragraph>
-            Cardano’s architecture aligns perfectly with YallaCap’s mission:
-            reliability, transparency, and high-integrity data.
+            Cardano's architecture aligns perfectly with YallaCap's mission:
+            reliability, transparency and high-integrity data.
           </Paragraph>
 
-          {/* Why YallaCap Exists */}
           <Title level={3}>Why This Project Exists</Title>
 
           <Paragraph>
-            YallaCap originally began as a development challenge: building a complex,
-            data-driven app that consumes multiple endpoints and presents it in a
-            clean UI using Ant Design.
+            YallaCap originally began as a development challenge: building a
+            complex, data-driven app that consumes multiple endpoints and presents
+            it in a clean UI using Ant Design.
           </Paragraph>
 
           <Paragraph>
-            Since then, it has evolved into a polished, fast, high-performance crypto
-            dashboard made for real daily use.
+            Since then, it has evolved into a polished, fast, high-performance
+            crypto dashboard made for real daily use.
           </Paragraph>
 
-          {/* Technical Challenges */}
           <Title level={3}>Technical Challenges</Title>
 
           <Paragraph>Building YallaCap involved several engineering exercises:</Paragraph>
@@ -115,12 +112,11 @@ class ReactAbout extends Component {
             <li>Mastering Ant Design for polished UI/UX</li>
           </ul>
 
-          {/* Spirit of Crypto */}
           <Title level={3}>The Spirit of Magic Internet Money</Title>
 
           <Paragraph>
             Crypto is fast. Chaotic. Beautiful. Ridiculous. Exciting. YallaCap
-            embraces that energy; giving you a smooth, powerful window into the
+            embraces that energy — giving you a smooth, powerful window into the
             constantly evolving digital marketplace.
           </Paragraph>
 
