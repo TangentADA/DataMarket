@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import { Layout } from 'antd'
 
 import ReactHeader from './Navigation/ReactHeader'
@@ -17,31 +17,32 @@ import ReactEmpty from './Empty/ReactEmpty'
 import ReactAssetPlatforms from './AssetPlatforms/ReactAssetPlatforms'
 
 const App = () => {
-  const isMobile = window.innerWidth <= 768; // adjust breakpoint as needed
+  // Mobile breakpoint check
+  const isMobile = window.innerWidth <= 768
 
   return (
     <Router>
       <Layout style={{ minHeight: '100vh', lineHeight: '1.6rem' }}>
         <ReactHeader />
         <Layout>
-          <Routes>
-            {/* Redirect root based on device */}
-            <Route path="/" element={
-              isMobile ? <Navigate to="/coins-mobile" /> : <Navigate to="/coins" />
-            }/>
+          <Switch>
+            {/* Root redirect based on device */}
+            <Route exact path="/">
+              {isMobile ? <Redirect to="/coins-mobile" /> : <Redirect to="/coins" />}
+            </Route>
 
             {/* Regular routes */}
-            <Route path="/about" element={<ReactAbout />} />
-            <Route path="/trending-coins" element={<ReactTrendingCoins />} />
-            <Route path="/coins" element={<ReactCoinsList />} />
-            <Route path="/coins-mobile" element={<ReactCoinsList />} /> {/* optional mobile-specific */}
-            <Route path="/coins/:coinId" element={<ReactCoinsDetail />} />
-            <Route path="/exchanges/list" element={<ReactExchangesList />} />
-            <Route path="/global" element={<ReactGlobal />} />
-            <Route path="/empty" element={<ReactEmpty />} />
-            <Route path="/exchange-rates" element={<ReactExchangeRates />} />
-            <Route path="/asset-platforms" element={<ReactAssetPlatforms />} />
-          </Routes>
+            <Route exact path="/about" component={ReactAbout} />
+            <Route exact path="/trending-coins" component={ReactTrendingCoins} />
+            <Route exact path="/coins" component={ReactCoinsList} />
+            <Route exact path="/coins-mobile" component={ReactCoinsList} /> {/* optional mobile-specific route */}
+            <Route exact path="/coins/:coinId" component={ReactCoinsDetail} />
+            <Route exact path="/exchanges/list" component={ReactExchangesList} />
+            <Route exact path="/global" component={ReactGlobal} />
+            <Route exact path="/empty" component={ReactEmpty} />
+            <Route exact path="/exchange-rates" component={ReactExchangeRates} />
+            <Route exact path="/asset-platforms" component={ReactAssetPlatforms} />
+          </Switch>
         </Layout>
         <ReactFooter />
       </Layout>
@@ -50,4 +51,3 @@ const App = () => {
 }
 
 export default App
-
