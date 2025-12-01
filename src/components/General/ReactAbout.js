@@ -18,6 +18,7 @@ class ReactAbout extends Component {
       <Layout style={{ padding: '1rem' }}>
         <Content className="text-focus-in" style={{ ...contentStyle }}>
           <Title level={2}>What Is YallaCap?</Title>
+
           <Paragraph>
             YallaCap is a fast, lightweight crypto intelligence terminal designed for
             traders, explorers, and curious minds wandering the world of magic
@@ -27,17 +28,17 @@ class ReactAbout extends Component {
           </Paragraph>
 
           <Paragraph>
-            Whether you’re deep in the charts, researching the next narrative, or just
-            checking if the market is down bad (again), YallaCap gives you the tools
-            to see the crypto world clearly.
+            Whether you’re deep in the charts, researching the next narrative, or
+            just checking if the market is down bad (again), YallaCap gives you the
+            tools to see the crypto world clearly.
           </Paragraph>
 
           <Title level={3}>Powered by Live Crypto Data</Title>
+
           <Paragraph>
             All market data is sourced from the CoinGecko API — one of the most
             reliable, community-friendly and widely used data providers in the crypto
-            ecosystem. Prices, volumes, market caps, trending assets, global metrics,
-            and exchange information are pulled directly from their public API.
+            ecosystem.
           </Paragraph>
 
           <a
@@ -53,10 +54,60 @@ class ReactAbout extends Component {
             />
           </a>
 
-          <Paragraph />
+          <Paragraph>
+            Prices, volumes, market caps, trending assets, and global metrics are
+            pulled directly from the public CoinGecko API.
+          </Paragraph>
 
           <Title level={3}>Why This Project Exists</Title>
-          <Paragraph>
-            YallaCap originally began as a development challenge: building a complex
-           , data-driven application that consumes multiple endpoints, restructures
 
+          <Paragraph>
+            YallaCap originally began as a development challenge: building a complex,
+            data-driven app that consumes multiple endpoints and presents it in a
+            clean UI using Ant Design.
+          </Paragraph>
+
+          <Paragraph>
+            Since then, it has evolved into a polished, fast, high-performance crypto
+            dashboard made for real daily use.
+          </Paragraph>
+
+          <Title level={3}>Technical Challenges</Title>
+
+          <Paragraph>
+            Building YallaCap involved several engineering exercises:
+          </Paragraph>
+
+          <ul style={{ paddingLeft: '1.2rem' }}>
+            <li>Organizing large volumes of asynchronous API data</li>
+            <li>Structuring reusable, modular UI components</li>
+            <li>Handling nested routing across multiple sections</li>
+            <li>Transforming raw API responses into trader-friendly formats</li>
+            <li>Mastering Ant Design for polished UI/UX</li>
+          </ul>
+
+          <Title level={3}>The Spirit of Magic Internet Money</Title>
+
+          <Paragraph>
+            Crypto is fast. Chaotic. Beautiful. Ridiculous. Exciting. YallaCap
+            embraces that energy — giving you a smooth, powerful window into the
+            constantly evolving digital marketplace.
+          </Paragraph>
+
+          <Paragraph>
+            <Text strong>
+              Welcome to YallaCap. Explore the markets. Follow the trends. Stay
+              curious.
+            </Text>
+          </Paragraph>
+        </Content>
+      </Layout>
+    )
+  }
+}
+
+const mapActionsToProps = {
+  setHeaderMenuItem
+}
+
+export default connect(null, mapActionsToProps)(ReactAbout)
