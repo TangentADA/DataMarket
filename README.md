@@ -1,138 +1,109 @@
-# Cryptocurrency App
-Consolidating RESTFUL calls from the CoinGecko API into a React application. I'll be using v3 of the API (the most recent version at the time of starting this project) This app will be using ant design for UI. 
+# YallaCap – Crypto Trading Analysis Terminal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**YallaCap** is a real-time cryptocurrency trading analysis terminal. Track prices, market trends, exchange rates, events, and more in a sleek dashboard interface. Paid features and subscriptions are powered by **Cardano**, providing a seamless crypto-based payment experience. Data is aggregated directly from the **CoinGecko API**.
 
-# Project Structure 
-Generated with `tree` command.
+---
+
+## 🚀 Features
+
+* **Comprehensive Coin Dashboard:** Market stats, community data, developer stats, trending coins, and detailed price charts.
+* **Exchanges & Rates:** Live exchange listings and global crypto rates.
+* **Events & Status Updates:** Track cryptocurrency events and network status changes.
+* **Responsive UI:** Built with **React** and **Ant Design**, fully responsive for desktop and mobile.
+* **Paid Features (Cardano Powered):** Subscription-based analytics with Cardano payments (future integration).
+
+---
+
+## 🏗 Project Structure
+
 ```
 .
-├── API
-│   └── index.js
-├── ChartConfig
-│   └── index.js
-├── components
-│   ├── App.css
-│   ├── App.js
-│   ├── Coins
-│   │   ├── ReactCoinCommunityStats.js
-│   │   ├── ReactCoinDetailSummary.js
-│   │   ├── ReactCoinDeveloperStats.js
-│   │   ├── ReactCoinMarketDetailedStats.js
-│   │   ├── ReactCoinMarketStats.js
-│   │   ├── ReactCoinScores.js
-│   │   ├── ReactCoinsDetail.js
-│   │   └── ReactCoinsList.js
-│   ├── Empty
-│   │   └── ReactEmpty.js
-│   ├── Events
-│   │   └── ReactEvents.js
-│   ├── ExchangeRates
-│   │   └── ReactExchangeRates.js
-│   ├── Exchanges
-│   │   └── ReactExchangesList.js
-│   ├── General
-│   │   ├── ReactAbout.js
-│   │   └── ReactHome.js
-│   ├── Global
-│   │   └── ReactGlobal.js
-│   ├── Navigation
-│   │   ├── ReactFooter.js
-│   │   ├── ReactHeader.js
-│   │   └── ReactSider.js
-│   └── StatusUpdates
-│       └── ReactStatusUpdates.js
-├── constants
-│   └── index.js
-├── images
-│   ├── branding
-│   │   └── CoinGecko.png
-│   ├── flaticon
-│   │   ├── 001-bitcoin.svg
-│   │   ├── 001-chat.svg
-│   │   ├── 002-bitcoin-1.svg
-│   │   ├── 002-bitcoin.svg
-│   │   ├── 003-bitcoin-2.svg
-│   │   ├── 003-smartphone.svg
-│   │   ├── 004-exchange.svg
-│   │   ├── 005-idea.svg
-│   │   ├── 006-binary.svg
-│   │   └── worldwide.svg
-│   └── logo
-│       └── logo.png
-├── index.js
-├── redux_actions
-│   └── index.js
-├── redux_reducers
-│   └── index.js
-└── styles
-    └── index.js
+├── src
+│   ├── API               # Axios setup for CoinGecko API
+│   ├── ChartConfig       # Chart.js configuration
+│   ├── components        # React components
+│   │   ├── Coins         # Coin-related views
+│   │   ├── Exchanges     # Exchange listings
+│   │   ├── Events        # Event tracking
+│   │   ├── Global        # Global market overview
+│   │   ├── Navigation    # Header, Footer, Sidebar
+│   │   └── ...           # Other UI components
+│   ├── redux_actions     # Redux actions
+│   ├── redux_reducers    # Redux reducers
+│   └── styles            # CSS/JS style definitions
+├── public                # Static files, favicon, manifest
+├── package.json          # Dependencies
+└── README.md             # Project documentation
 ```
 
-# Themes
-The themes for this app will directly correlate to the api endpoints provided by the CoinGecko API. I want to split up the app into digestible React components in the following areas, which will most likely form part of a larger dashboard interface.
+---
 
-- Coins
-- Exchanges
-- Status Updates
-- Exchange Rates
-- Events
-- Global
+## ⚙️ Tech Stack
 
-# Requirements (npm)
-Requirements for this project can be found in the package.json. And can be installed with `npm install` from root of the project directory.
+* **Front-end:** React, React Router, Ant Design UI
+* **Data API:** CoinGecko API (v3)
+* **Charts:** Chart.js
+* **State Management:** Redux (optional, for large-scale state handling)
+* **HTTP Requests:** Axios
 
-I aim to use the following packages:
-**must have packages**
-- antd (ui framework for react)
-- react (front-end)
-- react-router-dom (routing for react)
-- chartjs (charting library)
-- axios (graceful api calls)
+---
 
-**optional packages**
-- redux (may need redux for state management if number of components grows)
-- ant motion (animations for ant design ui)
+## 💻 Installation & Local Setup
 
-
-# Tests
-
-# Sources
-- [The CoinGecko API](https://www.coingecko.com/en/api#)
-- [React documentation](https://reactjs.org/docs/getting-started.html)
-- [Ant Design Documentation](https://ant.design/docs/react/introduce)
-
-# Steps to reproduce
-
-```sh
-
+```bash
+# Clone the repo
 git clone https://github.com/TangentADA/DataMarket.git
 
-# install dependencies and start local server (make sure you have nvm and yarn installed beforehand)
+# Use Node version manager
 nvm use
+
+# Install dependencies
 yarn
+
+# Start local development server
 yarn start
 
-# building
+# Build production version
 yarn build
 ```
 
-## Preview
+* Open your browser at `http://localhost:3000` to view the app locally.
 
-<a href="https://data-market-pipeline.herokuapp.com/" >Heroku Deployment</a>
+---
+
+## 🌐 Live Demo
+
+Check out the live deployment: [YallaCap](https://www.yallacap.com/#/asset-platforms)
+
+---
+
+## 📄 Meta Information / SEO
+
+* Title: **YallaCap – Crypto Trading Analysis Terminal**
+* Description: *“YallaCap is a crypto trading analysis terminal. Track cryptocurrency prices, trends, and global market data in real time. Paid features powered by Cardano.”*
+* Social Sharing: Open Graph & Twitter cards are preconfigured with logo and description.
+
+---
+
+## 📝 To Do / Future Enhancements
+
+* [x] Add total market information
+* [x] Search UI alignment & functionality
+* [x] Move coin details to full page view
+* [x] Refactor codebase and webpage structure
+* [x] Add Home / Dashboard / About pages
+* [ ] Login/signup authentication
+* [ ] Watchlist
+* [ ] Paid subscription integration via Cardano
+
+---
+
+## 📚 Sources & References
+
+* [CoinGecko API](https://www.coingecko.com/en/api#)
+* [React Documentation](https://reactjs.org/docs/getting-started.html)
+* [Ant Design Documentation](https://ant.design/docs/react/introduce)
 
 
-## To Do
 
-
-<ul>
-  <li>[X] Add total market information</li>
-  <li>[X] Search UI alignment & Functionality</li>
-  <li>[X] Move coin details to full page</li>
-  <li>[X] Refactor codebase and webpage structure</li>
-  <li>[X] Add Home / Dashboard / About pages</li>
-  <li>[ ] login/signup authentication</li>
-  <li>[ ] Watchlist</li>
-  <li>[ ] Binding Server-Side</li>
-</ul>
 
