@@ -99,7 +99,7 @@ class ReactHome extends Component {
               </Col>
             ))}
           </Row>
-          <Paragraph>icons provided by flaticon.</Paragraph>
+          <Paragraph>This is just MVP. More coming soon.</Paragraph>
         </Content>
       </Layout>
     )
