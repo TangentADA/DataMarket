@@ -7,6 +7,6 @@ const { Footer } = Layout
 export default function ReactFooter () {
   return (
     <Footer style={footerStyle}>
-            Developed by <strong>Tangent</strong>.<br></br>Built with <strong>React</strong> and basic Design UI.<br></br>Powered by <strong>CoinGecko</strong> API.</Footer>
+            Developed by <strong>Eth2ADA</strong>.<br></br>Built with <strong>React</strong> and basic Design UI.<br></br>Powered by <strong>Cardano</strong> API.</Footer>
   )
 }
