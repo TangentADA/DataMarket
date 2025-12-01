@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Layout, Typography, Divider } from 'antd'
+import { Layout, Typography } from 'antd'
 import { contentStyle } from '../../styles'
 import coinGeckoLogo from '../../images/branding/CoinGecko.png'
 import { connect } from 'react-redux'
@@ -16,89 +16,47 @@ class ReactAbout extends Component {
   render () {
     return (
       <Layout style={{ padding: '1rem' }}>
-        <Content className="text-focus-in" style={{ ...contentStyle, maxWidth: 800, margin: '0 auto' }}>
-
-          <Title level={2}>About YallaCap</Title>
+        <Content className="text-focus-in" style={{ ...contentStyle }}>
+          <Title level={2}>What Is YallaCap?</Title>
           <Paragraph>
-            <Text strong>YallaCap</Text> is a next-generation crypto trading analysis terminal designed for
-            traders, builders, and believers in the magic of the internet money economy.
-            Real-time market data, deep insights, trending coins, exchange stats, and global indicators —
-            all consolidated into one fast and intuitive dashboard.
+            YallaCap is a fast, lightweight crypto intelligence terminal designed for
+            traders, explorers, and curious minds wandering the world of magic
+            internet money. It aggregates real-time market data, global metrics,
+            exchange info, trending coins, and more — all through a clean and
+            intuitive interface.
           </Paragraph>
 
           <Paragraph>
-            The mission is simple: <Text strong>give you professional-grade crypto data without friction</Text>.
-            No noise. No paywalls upfront. Just clean intel to help you navigate the markets with confidence.
+            Whether you’re deep in the charts, researching the next narrative, or just
+            checking if the market is down bad (again), YallaCap gives you the tools
+            to see the crypto world clearly.
           </Paragraph>
 
-          <Divider />
-
-          <Title level={3}>Powered by Cardano</Title>
+          <Title level={3}>Powered by Live Crypto Data</Title>
           <Paragraph>
-            Paid features and premium access inside YallaCap are powered by <Text strong>Cardano</Text>,
-            letting users unlock tools using fast, secure, low-fee ADA payments.
-            No accounts. No KYC. No waiting. Just seamless blockchain-native access.
-          </Paragraph>
-
-          <Divider />
-
-          <Title level={3}>Real-Time Crypto Data</Title>
-          <Paragraph>
-            All market data — prices, volume, market cap, trending lists, exchange stats, and asset platform
-            information — is sourced from the <Text strong>CoinGecko API</Text>, one of the most reliable and
-            battle-tested data providers in the industry.
+            All market data is sourced from the CoinGecko API — one of the most
+            reliable, community-friendly and widely used data providers in the crypto
+            ecosystem. Prices, volumes, market caps, trending assets, global metrics,
+            and exchange information are pulled directly from their public API.
           </Paragraph>
 
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.coingecko.com/en/api#">
+            href="https://www.coingecko.com/en/api#"
+          >
             <img
               className="responsive-image"
               alt="coingecko api link"
-              style={{ border: '1px solid #f3f3f3', maxWidth: '300px', marginTop: '1rem' }}
+              style={{ border: '1px solid #f3f3f3', maxWidth: '400px' }}
               src={coinGeckoLogo}
             />
           </a>
 
-          <Divider />
+          <Paragraph />
 
-          <Title level={3}>Why YallaCap Exists</Title>
+          <Title level={3}>Why This Project Exists</Title>
           <Paragraph>
-            The crypto world moves fast, and most tools are bloated, confusing, or locked behind subscriptions.
-            YallaCap was created to offer:
-          </Paragraph>
+            YallaCap originally began as a development challenge: building a complex
+           , data-driven application that consumes multiple endpoints, restructures
 
-          <ul>
-            <li>⚡ A clean and blazing-fast UI built with React + Ant Design</li>
-            <li>📊 Real-time coin and market intelligence for traders</li>
-            <li>🌍 On-chain friendly payments with Cardano</li>
-            <li>📱 A smooth experience across desktop and mobile</li>
-            <li>🧙 A little magic-internet-money energy for the culture</li>
-          </ul>
-
-          <Divider />
-
-          <Title level={3}>The Vision</Title>
-          <Paragraph>
-            Crypto deserves tools that feel modern, powerful, and fun — not corporate dashboards or spreadsheet hell.
-            YallaCap is built to grow into a full analytics terminal: coins, markets, on-chain metrics,
-            charts, sentiment, and AI-powered trading signals.
-          </Paragraph>
-
-          <Paragraph>
-            This is just the beginning.  
-            <Text strong>Let’s build the future of crypto intelligence, one block at a time.</Text>
-          </Paragraph>
-
-        </Content>
-      </Layout>
-    )
-  }
-}
-
-const mapActionsToProps = {
-  setHeaderMenuItem
-}
-
-export default connect(null, mapActionsToProps)(ReactAbout)
